@@ -1,5 +1,5 @@
 // Crea la variable de referncia del lienzo usando fabric.Canvas()
-var Canvas = new fabric.Canvas("MyCanvas");
+var Canvas = new fabric.Canvas("myCanvas");
 
 //Define el ancho inicial y el alto del cloque de imágenes 
 ancho = 30;
