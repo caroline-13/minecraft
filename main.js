@@ -78,6 +78,16 @@ function teclaPulsada(e) {
     if (tecla == "65") {//a
         new_image("yellow_wall.png");
     }
+    if(e.shiftKey&&tecla=="187"){
+        ancho=ancho + 10 ;
+        alto=alto + 10 ;
+    }
+    if(e.shiftKey&&tecla=="189"){
+        ancho=ancho - 10 ;
+        alto=alto - 10 ;
+    }
+    document.getElementById("Alto").innerHTML=alto;
+    document.getElementById("Ancho").innerHTML=ancho;
 }
 function new_image(imagen) {
     fabric.Image.fromURL(imagen, function (img) {
@@ -92,6 +102,7 @@ function new_image(imagen) {
     }
     )
 }
+
 
 
 
